@@ -10,18 +10,23 @@ function calculator(e){
     screen.value+=e.target.value;
 }
 
-//Event to clear the screen 
-clear.addEventListener("click",()=>{
-    screen.value = "";
-})
-btn.forEach(button=>{
-    button.addEventListener("click",calculator)
-})
-
-result.addEventListener("click",()=>{
+//Function to calculate values
+function Calculation(){
     try{
         screen.value = eval(screen.value);
     }catch(err){
         screen.value = "Error";
     }
+}
+
+btn.forEach(button=>{
+    button.addEventListener("click",calculator)
 })
+//Event to clear the screen 
+clear.addEventListener("click",()=>{
+    screen.value = "";
+})
+
+
+//Event to calculate
+result.addEventListener("click",Calculation)

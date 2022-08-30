@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.calcultor-box{
+    width: 400px; 
+    height: 400px;
+}
+
+input[type=text]{
+    text-align: right;
+}
+.calcultor-row{
+    width: 100%;
+   display: flex;
+  justify-content: center;
+
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.buttons button{
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+}
